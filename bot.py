@@ -1,6 +1,6 @@
 import telebot
 
-token = "1030930072:AAFkMta9-uW2FZdgtuJAQ7-52lCwaPGvJtU"
+token = "1137248984:AAH2EtPd-7oVmq2Oo6FZTd1RiZh4nrBoxWY"
 bot = telebot.TeleBot(token)
 
 def get_rasp():
@@ -23,5 +23,6 @@ def send_text(message):
             print(text)
     except Exception as e:
         print("ooops")
+        bot.send_message(message.chat.id, "ooops:\nfile empty")
 
 bot.polling()
