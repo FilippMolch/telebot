@@ -1,7 +1,7 @@
 import telebot
 import os
 
-token = "1137248984:AAH2EtPd-7oVmq2Oo6FZTd1RiZh4nrBoxWY"
+token = ""
 bot = telebot.TeleBot(token)
 
 def get_rasp():
